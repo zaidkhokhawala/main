@@ -1,14 +1,14 @@
 import React from 'react'
-
+import Navbar from '../Common/Navbar'
 
 
 
 function Contact() {
   return (
-    <div>
+    <div className='container mt-5'>
+        <Navbar/>
         
-        
-helllllllllll
+
   </div>
 
   )
