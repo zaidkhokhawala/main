@@ -1,12 +1,14 @@
-import Crud from "./Crud";
-
+// import Crud from "./Crud";//
+import Prompsparents from "./promps/Prompsparents";
 
 function App() {
   return (
     <div className="App">
-      <Crud/>
+    {  /* <Crud /> */}
+     <Prompsparents/>
     </div>
   );
 }
 
 export default App;
+

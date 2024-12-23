@@ -5,7 +5,7 @@ import CarList from "./CarList";
 function App() {
   return (
     <div className="App">
-    <CarList/>
+<CarList/>
     </div>
   );
 }
