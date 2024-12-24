@@ -3,9 +3,9 @@ import React from 'react'
 /* Step 1: Ek React functional component banaiye.ye child component hogha 
 Iske parameter me curly braces ke andar props define karein. ex : ({id, name,city})
 step 2 : <h4 className="card-title">{name}</h4> ese call karvaye  
-step 3 : yahi file ek naya component ya nayi file ek component banake parameter pass karayghe jo child component h 
+step 3 : ek  nayi file m ek component banake parameter pass karayghe jo child component h 
 uska component ka Name dekar return ke ander ex : <Promps id="1" name="Zaid" city="Ahmedabad" />
-                                  <Promps id="2" name="Aman" city="Mumbai" />
+                                                   <Promps id="2" name="Aman" city="Mumbai" />
 agar multiple h to ese likheghe phir isee map filter se bhi kar sakte h 
 const cardData = [
         { id: 1, name: "Zaid", city: "Ahmedabad" },
@@ -14,7 +14,7 @@ phir return me map function use kareghe
  {cardData.map((person) => ( <Promps  id={person.id}  name={person.name}  city={person.city} /> ))}
 
 
-step 3 :  app.js me parents component yani jis me hum value pass karni ho use call karayghe 
+step 4 :  app.js me parents component yani jis me hum value pass karni ho use call karayghe 
         ex : <Prompsparents/> yaha ye parents componenet h  */
 
 
