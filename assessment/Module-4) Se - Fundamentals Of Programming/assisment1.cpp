@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Function to display the food menu
-void displayMenu() {
+ displayMenu() {
     printf("\n--- Food Menu ---\n");
     printf("1. Pizza       - Rs. 200\n");
     printf("2. Burger      - Rs. 100\n");
@@ -35,27 +35,21 @@ void displayMenu() {
         printf("Enter the quantity: ");
         scanf("%d", &quantity);
 
-        // Use conditional statements to calculate the bill based on the choice
-        switch (choice) {
-            case 1:
-                printf("You ordered Pizza x %d\n", quantity);
-                totalBill += 200 * quantity;  // Add price of pizza to total bill
-                break;
-            case 2:
-                printf("You ordered Burger x %d\n", quantity);
-                totalBill += 100 * quantity;  // Add price of burger to total bill
-                break;
-            case 3:
-                printf("You ordered Sandwich x %d\n", quantity);
-                totalBill += 150 * quantity;  // Add price of sandwich to total bill
-                break;
-            case 4:
-                printf("You ordered Pasta x %d\n", quantity);
-                totalBill += 250 * quantity;  // Add price of pasta to total bill
-                break;
-            default:
-                printf("Invalid choice! Please select a valid item.\n");
-                break;
+        // Calculate the bill based on the choice using if-else
+        if (choice == 1) {
+            printf("You ordered Pizza x %d\n", quantity);
+            totalBill += 200 * quantity;  // Add price of pizza to total bill
+        } else if (choice == 2) {
+            printf("You ordered Burger x %d\n", quantity);
+            totalBill += 100 * quantity;  // Add price of burger to total bill
+        } else if (choice == 3) {
+            printf("You ordered Sandwich x %d\n", quantity);
+            totalBill += 150 * quantity;  // Add price of sandwich to total bill
+        } else if (choice == 4) {
+            printf("You ordered Pasta x %d\n", quantity);
+            totalBill += 250 * quantity;  // Add price of pasta to total bill
+        } else {
+            printf("Invalid choice! Please select a valid item.\n");
         }
 
         // Ask the user if they want to order more
@@ -68,5 +62,5 @@ void displayMenu() {
     printf("\n--- Final Bill ---\n");
     printf("Total Amount to be Paid: Rs. %d\n", totalBill);
     printf("Thank you! Visit Again!\n");
-}
 
+}
